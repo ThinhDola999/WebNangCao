@@ -1,0 +1,113 @@
+/* Trong file register.css */
+.register-container {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.register-container .form-group {
+  margin-bottom: 20px;
+}
+
+.register-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.register-container .form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-container .form button:hover {
+  background-color: #e0563d;
+}
+
+.register-container .forgot-password-link {
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-container .forgot-password-link:hover {
+  text-decoration: underline;
+}
+.register-container .ho-ten {
+  display: flex;
+  justify-content: space-between;
+  /* width: 30%; */
+}
+
+.register-container .form-group-HT {
+  width: 45%;
+  margin-right: 18px;
+}
+
+/* Trong file register.css */
+.register-container .required-label::after {
+  content: " *"; /* Hiển thị ký tự " * " bằng cách sử dụng pseudo-element ::after */
+  color: red; /* Màu của ký tự " * " */
+}
+
+.register-container .login {
+  text-align: center;
+}
+.register-container .login a {
+  text-decoration: none; /* Loại bỏ gạch chân dưới liên kết */
+  color: #007bff;
+  cursor: pointer;
+}
+
+.register-container .login a:hover {
+  text-decoration: underline; /* Gạch chân dưới khi di chuột qua */
+}
+
+.register-container .login i.fas.fa-arrow-left {
+  margin-right: 5px; /* Khoảng cách từ biểu tượng đến văn bản */
+}
+
+.register-container {
+  position: relative;
+}
+
+.register-container .close-button {
+  position: absolute; /* Đặt vị trí tuyệt đối cho nút "X" */
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  background-color: transparent; /* Nền trong suốt */
+  border: none; /* Không viền */
+  font-size: 20px; /* Kích thước chữ */
+  color: #333; /* Màu chữ */
+  cursor: pointer; /* Con trỏ chuột thành dạng tay khi di chuột qua nút */
+}
+
+.register-container .close-button:hover {
+  color: #f00;
+}

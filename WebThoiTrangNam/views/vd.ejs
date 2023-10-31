@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        .FormDangKy {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 3;
+        }
+
+        .overlay {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="toggleFormButton">Toggle Form</button>
+    <div class="FormDangKy" id="form">
+        <!-- <div class="modal-content"> -->
+        <%- include('Form/register') %>
+            <button id="closeFormButton">Close Form</button>
+            <!-- </div> -->
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        document.getElementById('toggleFormButton').addEventListener('click', function () {
+            var form = document.getElementById('form');
+            var overlay = document.getElementById('overlay');
+
+            form.style.display = 'block';
+            overlay.style.display = 'block';
+
+            setTimeout(function () {
+                form.style.opacity = 1;
+                overlay.style.opacity = 1;
+            }, 50); // Đợi 50ms trước khi bắt đầu hiệu ứng opacity
+        });
+
+        document.getElementById('.FormDangKy .register-container .close-button').addEventListener('click', function () {
+            var form = document.getElementById('form');
+            var overlay = document.getElementById('overlay');
+
+            form.style.opacity = 0;
+            overlay.style.opacity = 0;
+
+            setTimeout(function () {
+                form.style.display = 'none';
+                overlay.style.display = 'none';
+            }, 300); // Đợi 300ms để kết thúc hiệu ứng opacity
+        });
+
+
+
+    </script>
+</body>
+
+</html>

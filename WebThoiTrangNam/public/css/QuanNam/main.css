@@ -1,0 +1,287 @@
+.main {
+  display: flex;
+  padding: 15px;
+}
+
+.scrolling {
+  overflow-y: scroll; /* Kích hoạt thanh cuộn dọc */
+  max-height: 700px; /* Điều chỉnh chiều cao tối đa của phần tử, tuỳ thuộc vào bạn */
+}
+
+.scrolling::-webkit-scrollbar {
+  width: 10px;
+}
+.scrolling::-webkit-scrollbar-thumb {
+  background-color: #5e5a5a;
+  border-radius: 10px;
+}
+
+.main .BoLoc {
+  /* background-color: aqua; */
+  width: 25%;
+  min-width: 200px;
+  padding: 10px;
+  overflow-y: scroll;
+  max-height: 700px;
+}
+
+.main .BoLoc::-webkit-scrollbar {
+  width: 7px;
+}
+.main .BoLoc::-webkit-scrollbar-thumb {
+  background-color: #8b878754;
+  border-radius: 10px;
+}
+
+.main .BoLoc .iconBoLoc {
+  margin-left: 12px;
+}
+
+.main .BoLoc .DanhSachLuaChon {
+  flex-wrap: wrap;
+}
+
+.main .BoLoc .DanhSachLuaChon .button {
+  height: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: inline-block;
+  font-size: 10px;
+  background-color: #878686;
+  color: #e7edf3;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.main .BoLoc .DanhSachLuaChon .button p {
+  margin-top: 5px;
+  display: inline-block;
+}
+.main .BoLoc .DanhSachLuaChon .button i {
+  margin-top: 5px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.main .BoLoc .MucLuc {
+}
+
+.main .BoLoc .MucLuc .TieuDe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 1px solid black;
+  margin-top: 25px;
+}
+
+.main .BoLoc .MucLuc .TieuDeGia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 1px solid black;
+  margin-top: 25px;
+}
+
+.main .BoLoc .GiaTien .MenuItemGia input[type="range"] {
+  width: 80%;
+}
+
+.main .BoLoc .GiaTien .MenuItemGia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .BoLoc .MucLuc .MenuItem .ItemSize {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .BoLoc .MucLuc .MenuItem .ItemSize p {
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 3px;
+  margin-right: 5px;
+  width: 33px;
+  /* height: 25px; */
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+}
+.main .BoLoc .MucLuc .MenuItemGia {
+  display: none;
+}
+
+.main .BoLoc .MucLuc .MenuItem {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -10px;
+  display: none;
+}
+
+.main .BoLoc .MucLuc .MenuItem .Item {
+  display: flex;
+  align-items: center;
+  margin-bottom: -15px;
+}
+
+.main .BoLoc .MucLuc .MenuItem .Item input {
+  margin-right: 6px;
+  width: 18px;
+  height: 18px;
+}
+
+.main .DanhSachSanPham {
+  /* background-color: bisque; */
+  /* flex: 1; */
+  /* margin-left: 25%; */
+  width: 80%;
+  min-width: 50%;
+}
+
+.main .DanhSachSanPham .top-danhSachSanPham {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 70px;
+  padding-right: 20px;
+}
+
+.main .DanhSachSanPham .top-danhSachSanPham .soLuongSanPham {
+  font-weight: bold;
+}
+
+.main .DanhSachSanPham .top-danhSachSanPham .SapXep {
+  align-items: center;
+}
+
+.main .DanhSachSanPham .top-danhSachSanPham .SapXep .sorter-options {
+  padding: 5px;
+}
+.main .DanhSachSanPham .thongBao {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+.main .DanhSachSanPham .AoQuan {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px; /* Khoảng cách giữa các cột và dòng */
+}
+
+/* Khi cửa sổ thu nhỏ lại (vd: width < 768px), 2 cột */
+@media (max-width: 850px) {
+  .main .DanhSachSanPham .AoQuan {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.main .DanhSachSanPham .AoQuan .ItemAoQuan {
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  margin-bottom: 70px;
+}
+
+.main .DanhSachSanPham .AoQuan .ItemAoQuan img {
+  width: 100%;
+  height: 80%;
+  border-radius: 7px;
+}
+
+.main .DanhSachSanPham .AoQuan .ItemAoQuan .gia {
+  font-weight: bold;
+}
+
+.main .DanhSachSanPham .AoQuan .ItemAoQuan .MauSac {
+  display: flex;
+  margin-bottom: 10px;
+
+  /* width: 100%; */
+}
+
+.main .DanhSachSanPham .AoQuan .ItemAoQuan .MauSac .AnhMauSac {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.main .DanhSachSanPham .AoQuan .ItemAoQuan .MauSac .AnhMauSac img {
+  width: 50px;
+  height: 50px;
+}
+
+.main .DanhSachSanPham .AoQuan .ItemAoQuan .contentItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .DanhSachSanPham .AoQuan .ItemAoQuan .contentItem p {
+  font-size: 12px;
+  width: 80%;
+}
+
+.main .DanhSachSanPham .AoQuan .ItemAoQuan .contentItem i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.main .DanhSachSanPham .PhanTrang {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main .DanhSachSanPham .PhanTrang i {
+  font-size: 12px;
+  /* margin: 0 10px; */
+  cursor: pointer;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.main .DanhSachSanPham .PhanTrang button {
+  background-color: #e7edf3;
+  color: #393535;
+  border: solid 1px rgb(214, 230, 235);
+}
+
+.main .DanhSachSanPham .PhanTrang button:hover {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+.main .DanhSachSanPham .PhanTrang a {
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 3px;
+  margin-right: 3px;
+  border: solid 1px rgb(214, 230, 235);
+}
+
+.main .DanhSachSanPham .PhanTrang a:hover {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.trang-hien-tai {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.activeSize {
+  color: #fff;
+  background-color: #2d85e3 !important;
+  border: none;
+}

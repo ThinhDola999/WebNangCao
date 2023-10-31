@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="VestTangAo/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="FormDangNhap">
+
+        <%- include('../../Form/login') %>
+
+    </div>
+    <div class="FormDangKy">
+
+        <%- include('../../Form/register') %>
+
+    </div>
+    <div class="header" id="xxx">
+        <div class="header-content">
+            <div class="header-menu">
+                <div class="toggle"><i class="fas fa-bars"></i></div>
+
+                <div class="menu-item new">New</div>
+                <div class="menu-item best">Best</div>
+                <div class="menu-item sale-off">Sale Up To 50%</div>
+            </div>
+            <div class="logo"><img src="Logo.png"></div>
+
+            <div class="header-content-right">
+                <div class="block-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-customer">
+                    <i class="fas fa-user"></i>
+
+                </div>
+                <div class="minicart"><i class="fas fa-shopping-cart"></i></div>
+                <div class="wishlist"><i class="fas fa-heart"></i></div>
+            </div>
+
+        </div>
+
+        <div class="header-customer-content">
+
+            <div class="dangnhap">ĐĂNG NHẬP</div>
+            <div class="dangky">ĐĂNG KÝ</div>
+
+            <p>Theo dõi đơn hàng</p>
+            <p>Danh sách cửa hàng</p>
+
+        </div>
+        <div class="phienCoTaiKhoan">
+
+            <div class="userTaiKhoan">
+
+                <div class="tenTk">
+                    <p>Chào</p>
+                    <p class="ban" id="ban"></p>
+                </div>
+
+                <span>New</span>
+
+            </div>
+            <div class="danhmucUser">
+
+                <p>Hạng hội viên</p>
+                <p>Lịch sử mua hàng</p>
+                <p>Địa chỉ giao hàng</p>
+                <p>Danh sách cửa hàng</p>
+                <p>Sản phẩm yêu thích</p>
+                <p>Ưu đãi của bạn</p>
+
+            </div>
+
+            <p class="dangxuat">Đăng xuất</p>
+
+        </div>
+
+        <div class="menu">
+            <div class="i"></div>
+            <div class="menu-item xemtatca">Xem tất cả </div>
+            <div class="menu-item" id="aoNam">
+                Áo Nam <span class="expand-icon"></span>
+                <div class="submenu itemAo">
+                    <div class="submenu-item tatca" data-loai="Áo">Xem tất cả áo nam</div>
+                    <div class="submenu-item" data-loai="Áo" data-text="Áo Polo">Áo Polo</div>
+                    <div class="submenu-item" data-loai="Áo" data-text="Áo Thun">Áo Thun</div>
+                    <div class="submenu-item" data-loai="Áo" data-text="Áo Sơ Mi">Áo SoMi </div>
+                    <div class="submenu-item" data-loai="Áo" data-text="Áo Khoác">Áo Khoác</div>
+                    <div class="submenu-item" data-loai="Áo" data-text="Áo Tank Top">Áo Tank Top</div>
+
+                    <img src="ao-nam.jpg">
+                </div>
+            </div>
+            <div class="menu-item" id="quanNam">
+                Quần Nam <span class="expand-icon"></span>
+                <div class="submenu itemQuan">
+                    <div class="submenu-item tatca" data-loai="Quần">Xem tất cả quần nam</div>
+                    <div class="submenu-item" data-loai="Quần" data-text="Quần Kaki">Quần kaki</div>
+                    <div class="submenu-item" data-loai="Quần" data-text="Quần Short">Quần Short</div>
+                    <div class="submenu-item" data-loai="Quần" data-text="Quần Vải">Quần Vải</div>
+                    <div class="submenu-item" data-loai="Quần" data-text="Quần Jean">Quần jean</div>
+                    <div class="submenu-item" data-loai="Quần" data-text="Quần Jogger">Quần Jogger</div>
+
+                    <img src="quan-nam.jpg">
+                </div>
+            </div>
+            <div class="menu-item">Phụ Kiện</div>
+            <div class="menu-item">Ưu Đãi</div>
+            <div class="menu-item">Tin Thời Trang</div>
+
+
+            <div class="sale50 tat"><img src="sale50.png"></div>
+            <div class="divider">
+
+                <div class="menu-item tat"><i class="fas fa-store"></i> Danh sách cửa hàng</div>
+                <div class="menu-item tat"><i class="fas fa-clipboard-list"></i> Theo dõi đơn hàng</div>
+                <div class="menu-item tat"><i class="fas fa-phone"></i> Liên hệ</div>
+            </div>
+
+            <div class="authentication-menu tat1">
+                <i class="fas fa-user"></i>
+                <div class="menu-item dangnhap"> ĐĂNG NHẬP</div>
+                <div class="menu-item dangky"> ĐĂNG KÝ</div>
+            </div>
+
+            <div class="authentication-menu tat2">
+                <i class="fas fa-user"></i>
+                <div class="ten">
+                    <p class="chao">Chào,</p>
+                    <p class="tentk">Thịnh</p>
+                </div>
+                <div class="new">
+                    <p>New</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sanphamyeuthich">
+            <div class="tieude">
+
+                <div class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>Sản Phẩm Yêu Thích</p>
+                </div>
+                <div class="close-yeuthich"><i class="fas fa-times"></i></div>
+            </div>
+
+            <div class="canhbao">
+
+                <i class="fas fa-exclamation-triangle"></i>
+
+
+                <div>Không có sản phẩm yêu thích nào</div>
+            </div>
+            <div class="ĐanhSachYeuThich">
+
+                <div class="ItemYeuThich">
+                    <div class="anhItem">
+                        <img src="anh/quantayslimtron5.jpg">
+                    </div>
+
+                    <div class="thongtin-item">
+
+                        <div class="ten-san-pham">
+                            <p>Tên Sản Phẩm</p>
+                        </div>
+                        <div class="gia-san-pham">
+                            <p class="gia">590.000đ</p>
+                        </div>
+
+
+                        <div class="button-gio-hang">
+                            <p>Thêm vào giỏ hàng</p>
+                        </div>
+
+                    </div>
+
+                    <div class="button-xoa-item-sp_yeu_thich">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="GioHang">
+            <div class="tieude">
+
+                <div class="minicart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Giỏ Hàng</p>
+                </div>
+                <div class="close-giohang"><i class="fas fa-times"></i></div>
+            </div>
+
+            <p class="thongbao_giohang">Không có sản phẩm nào trong giỏ hàng</p>
+            <div class="DanhSachGioHang">
+
+                <div class="ItemGioHang">
+                    <div class="anhItem">
+                        <img src="anh/quantayslimtron5.jpg">
+                    </div>
+
+                    <div class="thongtin-item">
+
+                        <div class="ten-san-pham">
+                            <p>Tên Sản Phẩm sáhjsabsajjbsabasjbasjhbkldkd kjdfbjdfb</p>
+                        </div>
+
+
+                        <div class="mau-size">
+                            <div class="mau">
+                                <p>MÀU
+                                    <h7>
+                                        BLACK
+                                    </h7>
+                                </p>
+                            </div>
+                            <div class="size">
+                                <p>SIZE
+                                    <h7>
+                                        XS
+                                    </h7>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="soluong">
+                            <p>SỐ LƯỢNG:
+                                <h7>
+                                    1
+                                </h7>
+                            </p>
+
+                        </div>
+                        <div class="gia-san-pham">
+                            <p class="gia">590.000đ</p>
+                        </div>
+
+                    </div>
+
+                    <div class="button-xoa-item-gio_hang">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="thanhtoan">
+
+                <div class="tong_tien">
+                    <div class="ten">Tổng tiền:</div>
+                    <div class="so_tien">980.000đ</div>
+                </div>
+
+
+                <div class="button_thanhtoan">
+                    <p>THANH TOÁN</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="timkiem">
+            <div class="logo"><img src="/Logo.png"></div>
+
+            <div class="MuclucItem">
+                <a href="/thoi-trang-nam/ao-nam">ÁO</a>
+                <a href="/thoi-trang-nam/quan-nam">QUẦN</a>
+                <a href=" ">PHỤ KIỆN</a>
+
+                <div class="close-timkiem"><i class="fas fa-times"></i></div>
+            </div>
+
+            <div class="search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="timKiemNhieuNhat">
+                <div class="tukhoaTimKiem">
+                    <p>ĐƯỢC TÌM KIẾM NHIỀU</p>
+                    <div class="link">
+                        <a href=" ">Áo Khoác</a>
+                        <a href=" ">Áo Polo</a>
+                        <a href=" ">Quần Jean</a>
+                        <a href=" ">Quần Jogger</a>
+                    </div>
+
+                </div>
+
+                <div class="xemNhieuNhat">
+                    <P>ĐƯỢC XEM NHIỀU NHẤT</P>
+                    <div class="wrapper">
+
+                        <div class="item">
+                            <img src="10s22pol041-_black_2__2.jpg" alt="Image 1">
+                            <p>Áo Polo</p>
+                        </div>
+                        <div class="item">
+                            <img src="10s23dpa026_l_indigo-quan-jean-nam_1__2.jpg" alt="Image 2">
+                            <p>Quần Jogger</p>
+                        </div>
+                        <div class="item">
+                            <img src="10s23tss047_black-ao-thun-nam_1__1.jpg" alt="Image 3">
+                            <p>Áo Thun</p>
+                        </div>
+                        <div class="item">
+                            <img src="ao-so-mi-15-10f23shl030-green-_6__1.jpg" alt="Image 4">
+                            <p>Tên sản phẩm 4</p>
+                        </div>
+                        <div class="item">
+                            <img src="ao-so-mi-15-10f23shl035-brown-_6__1.jpg" alt="Image 5">
+                            <p>Tên sản phẩm 5</p>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="content-thoitrangnam-img">
+            <img src="vest-tang-ao.png">
+
+            <h1>MUA VEST TẶNG ÁO</h1>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="VestTangAo/header.js">
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+.main {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.main .flex-container {
+  display: flex;
+}
+
+.main .support-image {
+  display: flex;
+  flex-direction: column;
+  width: 94px;
+  height: 128px;
+  padding: 0px 30px 30px 30px;
+}
+.main .imgsp {
+  margin-bottom: 10px;
+  width: 80px;
+  height: 130px;
+}
+.main .imgsp:hover {
+  border: 1px solid black;
+}
+.main .mainimage img {
+  width: 600px;
+  height: 860px;
+  padding-right: 15px;
+}
+.main .info {
+  padding-left: 20px;
+}
+.main .info h3 {
+  font-size: 25px;
+}
+.main .chonsize {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .chonsize p {
+  color: black;
+}
+
+.main .chonsize p h7 {
+  font-weight: bold;
+}
+.main .chonsize .huongdan {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main .button1 {
+  border-radius: 0px;
+  border: rgb(207, 206, 206) solid 1px;
+  padding: 15px;
+  background-color: white;
+  margin: 15px 15px 15px 0px;
+  cursor: pointer;
+}
+.main .button1:hover {
+  border: gray solid 2px;
+}
+.main .changeimg {
+  border: rgb(207, 206, 206) solid 1.5px;
+  cursor: pointer;
+}
+.main .changeimg:hover {
+  border: gray solid 2px;
+}
+.main .number {
+  height: 50px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: black solid 1px;
+}
+.main .number span {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 1000;
+  cursor: pointer;
+}
+.main .num {
+  pointer-events: none;
+}
+.main .chonsoluong {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.main .chonsoluong .buttonMua {
+  text-align: center;
+  margin-top: -20px;
+}
+
+.main .chonsoluong .buttonMua p:hover {
+  background-color: rgb(73, 71, 71);
+}
+.main .chonsoluong .buttonMua p {
+  padding: 20px;
+  width: 300px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 35px;
+  margin-left: 35px;
+  font-weight: bold;
+}
+.main .tym {
+  width: 35px;
+  height: 35px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+.main .thongtinthem {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 200px;
+  background-color: #f5f5f5;
+}
+.main .thongtinthem > div {
+  margin: 10px;
+  text-align: center;
+}
+.main .thongtinthem > ul > li {
+  display: flex;
+  padding-right: 20px;
+  font-size: 15px;
+}
+.main .thongtinthem > ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.main .icon > img {
+  width: 45px;
+  height: 45px;
+  padding-right: 10px;
+}
+.main .p2 {
+  margin-top: 5px;
+  color: gray;
+}
+.main .headerdacdiem {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+.main .headerdacdiem > img {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  margin-bottom: 3px;
+  padding-right: 5px;
+}
+
+.main .dacdiem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 600px;
+  height: 120px;
+}
+.main .dacdiem > ul > li {
+  padding: 5px;
+}
+.main .danhgia > button {
+  width: 250px;
+  height: 50px;
+  background-color: rgb(225, 178, 117);
+  color: black;
+  cursor: pointer;
+  border: 0px;
+  font-weight: bolder;
+}
+.main .danhgia {
+  display: flex;
+  justify-content: flex-end;
+  width: 1492px;
+  padding-top: 60px;
+}
+.info .danhSachMau {
+  display: flex;
+}
+.info .changeimg {
+  width: 45px;
+  height: 60px;
+  margin-left: 5px;
+  padding: 1px;
+}
+.info .changeimg img {
+  width: 45px;
+  height: 60px;
+}
+
+.main .button1.active {
+  /* border: gray solid 2px; */
+  background-color: black;
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+.main .changeimg.active {
+  border: gray solid 2px;
+}
+
+.tenMau p h7 {
+  font-weight: bold;
+}
+
+.soluong p h7 {
+  font-weight: bold;
+}
+
+.phan-huong-dan-chon-size-cho-khach {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: none;
+}
+/* #xxxx {
+  position: unset;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+} */

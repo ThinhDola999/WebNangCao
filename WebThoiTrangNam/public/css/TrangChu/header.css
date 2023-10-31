@@ -1,0 +1,863 @@
+.page-1 {
+  margin-left: -8px;
+  margin-top: -8px;
+  margin-right: -8px;
+  /* text-align: center; */
+}
+.header .logo img {
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 15px;
+
+  border: none;
+}
+.image-slider img {
+  width: 100%;
+  height: auto;
+}
+.image-slider .x {
+  display: none;
+}
+.owl-dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #888;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.owl-dots {
+  text-align: center;
+  position: relative;
+  margin-top: -30px;
+}
+
+.owl-dot.active {
+  background-color: #333;
+}
+
+/* .header-content */
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  height: 50px;
+  top: 0px;
+  position: fixed;
+  margin-left: -10px;
+  z-index: 1;
+}
+
+.header-content.active {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-menu .sale-off {
+  color: red;
+}
+
+.header-content .header-menu .menu-item {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: -6px;
+  margin-right: 30px;
+  /* color: black; */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header-content-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-customer-content {
+  position: fixed;
+  z-index: 100;
+  right: 0px;
+  top: 80px;
+  margin-right: 40px;
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 17px;
+  display: none;
+}
+.header-customer-content div {
+  font-weight: bold;
+  padding: 7px;
+  text-align: center;
+  border: 1px solid rgb(22, 21, 21);
+  border-radius: 3px;
+}
+
+.header-customer-content .dangnhap {
+  color: #ffffff;
+  background-color: #0c0b0b;
+  cursor: pointer;
+}
+.header-customer-content .dangky {
+  cursor: pointer;
+}
+
+.header-customer-content div,
+p {
+  margin-bottom: 10px;
+}
+.header-content-right .block-search,
+.header-content-right .header-customer,
+.header-content-right .minicart,
+.header-content-right .wishlist {
+  margin-right: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.block-search input[type="text"] {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(30, 28, 28);
+
+  padding: 4px;
+  margin-left: 5px;
+  width: 150px;
+}
+
+.block-search input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid black; /* Đổi màblu sắc viền thành trong suốt */
+}
+
+.header-content-right .block-search i,
+.header-content-right .header-customer i,
+.header-content-right .minicart i,
+.header-content-right .wishlist i {
+  margin-right: 5px;
+  color: rgb(64, 209, 180);
+}
+
+.header-content.active .header-content-right i {
+  color: #ffffff;
+}
+.mucluc {
+  position: fixed;
+  z-index: 1;
+  margin-top: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.mucluc .menu-item {
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+/* menu */
+.menu {
+  width: 600px;
+  height: 100%;
+  background-color: #ffffff;
+  color: #0c0b0b;
+  padding: 20px;
+  position: fixed;
+  z-index: 1000;
+  /* margin-top: 100px; */
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 0px;
+  padding-top: 140px;
+  margin-left: -10px;
+  display: none;
+}
+
+.menu .menu-item {
+  margin-bottom: 25px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.menu .menu-item:hover {
+  color: rgb(247, 178, 39);
+}
+
+.menu .menu-item span {
+  margin-left: 7px;
+}
+
+.submenu {
+  position: absolute;
+  font-size: 24px;
+  border-right: 2px solid rgb(87, 205, 187);
+  padding-right: 40px;
+  color: rgb(27, 131, 206);
+}
+.submenu img {
+  width: 170px;
+  margin-top: 30px;
+}
+.submenu .submenu-item {
+  margin-bottom: 20px;
+}
+.submenu .submenu-item:hover {
+  color: rgb(20, 177, 119);
+}
+
+.submenu .tatca {
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
+.itemAo {
+  display: none;
+  margin-left: 300px;
+  margin-top: -140px;
+}
+
+.itemQuan {
+  display: none;
+  margin-left: 300px;
+  margin-top: -190px;
+}
+
+.submenu-item {
+  margin-bottom: 5px;
+}
+
+.menu-item.active .submenu {
+  display: block;
+}
+
+.expand-icon::before {
+  content: "+";
+  margin-right: 5px;
+}
+
+.menu-item.active .expand-icon::before {
+  content: "-";
+}
+
+.divider {
+  margin-top: 50px;
+  font-size: 18px;
+  color: #888;
+}
+.authentication-menu {
+  margin-top: 100px;
+  display: flex;
+  margin-left: 20px;
+  font-size: 22px;
+}
+.authentication-menu .dangnhap {
+  border-right: 2px solid rgb(30, 28, 28);
+  padding-right: 20px;
+}
+.sale50 img {
+  width: 150px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.sanphamyeuthich {
+  width: 400px;
+  height: 100%;
+  background-color: #ffffff;
+  color: #0c0b0b;
+  padding: 20px;
+  position: fixed;
+  z-index: 1000;
+  padding: 20px;
+  right: 0;
+  font-size: 25px;
+  font-weight: bold;
+  display: none;
+}
+.sanphamyeuthich .tieude .wishlist {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sanphamyeuthich .tieude {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.sanphamyeuthich .tieude .wishlist p {
+  /* font-size: 19px; */
+  margin-top: 0;
+  margin-left: 7px;
+  font-size: 20px;
+}
+
+.sanphamyeuthich .tieude .wishlist i {
+  /* font-size: 19px; */
+
+  color: #888;
+}
+.sanphamyeuthich .tieude .close-yeuthich {
+  cursor: pointer;
+}
+
+.GioHang {
+  width: 400px;
+  height: 100%;
+  background-color: #ffffff;
+  color: #0c0b0b;
+  padding: 20px;
+  position: fixed;
+  z-index: 1000;
+  padding: 20px;
+  right: 0;
+  font-size: 25px;
+  font-weight: bold;
+  display: none;
+}
+.GioHang .tieude .minicart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.GioHang .tieude {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.GioHang .tieude .minicart p {
+  /* font-size: 19px; */
+  margin-top: 0;
+  margin-left: 7px;
+  font-size: 20px;
+  color: #888;
+}
+
+.GioHang .tieude .minicart i {
+  /* font-size: 19px; */
+
+  color: #888;
+}
+.GioHang .tieude .closegiohang {
+  cursor: pointer;
+  color: #888;
+}
+
+.timkiem {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  height: 600px;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.timkiem .MuclucItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.timkiem .MuclucItem a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 10px;
+  border-right: 1px solid black;
+  padding-right: 10px;
+  margin-top: 38px;
+  color: rgb(39, 102, 161);
+}
+
+.timkiem .MuclucItem .close-timkiem {
+  font-size: 35px;
+  font-weight: bold;
+  position: fixed;
+  right: 0;
+  margin-right: 100px;
+}
+
+.timkiem .search {
+  margin-top: 30px;
+  text-align: center;
+}
+.timkiem .search i {
+  font-size: 27px;
+}
+
+.timkiem .search input[type="text"] {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(30, 28, 28);
+  width: 80%;
+  padding: 4px;
+  margin-left: 5px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.timkiem .search input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid black; /* Đổi màblu sắc viền thành trong suốt */
+}
+
+.timkiem .timKiemNhieuNhat {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.timkiem .timKiemNhieuNhat .tukhoaTimKiem p {
+  margin-bottom: 20px;
+}
+
+.timkiem .timKiemNhieuNhat .tukhoaTimKiem .link {
+  display: flex;
+}
+.timkiem .timKiemNhieuNhat .tukhoaTimKiem .link a {
+  text-decoration: none;
+  margin-right: 10px;
+  background-color: rgb(49, 191, 234);
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 6px;
+  width: 100px;
+}
+
+.timkiem .timKiemNhieuNhat .xemNhieuNhat .wrapper {
+  display: flex;
+  width: 360px;
+  overflow: hidden;
+  flex-direction: center;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.timkiem .timKiemNhieuNhat .xemNhieuNhat .wrapper img {
+  width: 120px;
+  height: 220px;
+  margin-left: 5px;
+}
+
+.timkiem .timKiemNhieuNhat .xemNhieuNhat .wrapper p {
+  color: #888;
+  font-size: 16px;
+}
+
+.FormDangKy {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.FormDangNhap {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#xxx {
+  position: unset;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.FormDangKy .register-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.FormDangNhap .login-container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.phienCoTaiKhoan {
+  position: fixed;
+  z-index: 100;
+  right: 0px;
+  top: 80px;
+  margin-right: 40px;
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 17px;
+  display: none;
+}
+.phienCoTaiKhoan .userTaiKhoan {
+  border-bottom: 1px solid #888;
+  padding-bottom: 20px;
+}
+.phienCoTaiKhoan .userTaiKhoan .tenTk {
+  font-weight: bold;
+  display: flex;
+}
+.phienCoTaiKhoan .userTaiKhoan .tenTk:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.phienCoTaiKhoan .userTaiKhoan .tenTk .ban {
+  margin-left: 5px;
+}
+
+.phienCoTaiKhoan .userTaiKhoan span {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: rgb(186, 213, 35);
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+.phienCoTaiKhoan .dangxuat {
+  border-top: 1px solid #888;
+  padding-top: 15px;
+}
+.phienCoTaiKhoan .dangxuat:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.menu .tat2 .ten:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.menu .tat2 .ten {
+  display: flex;
+  padding: 7px;
+  /* text-align: center; */
+  margin-top: -27px;
+  margin-left: 15px;
+}
+.menu .tat2 .ten .tentk {
+  margin-left: 7px;
+  text-align: center;
+}
+
+.menu .tat2 .new {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: rgb(186, 213, 35);
+  border-radius: 10px;
+  height: 30px;
+  margin-left: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu .tat2 .new p {
+  text-align: center;
+  margin-top: 3px;
+}
+
+.ĐanhSachYeuThich:hover {
+  overflow-y: scroll; /* Hiển thị thanh cuộn dọc khi người dùng hover vào */
+}
+.ĐanhSachYeuThich {
+  max-height: 1000px;
+  overflow-y: auto;
+  /* padding: 10px;  */
+  padding-right: 100px;
+  overflow-y: hidden; /* Có thanh cuộn dọc */
+  overflow-x: hidden; /* Không có thanh cuộn ngang */
+}
+
+/* Tùy chỉnh thanh trượt bên trong */
+.ĐanhSachYeuThich::-webkit-scrollbar {
+  width: 6px; /* Độ rộng của thanh trượt */
+  background-color: #ccc; /* Màu nền thanh trượt */
+}
+
+.ĐanhSachYeuThich::-webkit-scrollbar-thumb {
+  background-color: #666; /* Màu của thanh trượt */
+  border-radius: 5px; /* Góc bo tròn cho thanh trượt */
+}
+.sanphamyeuthich .ĐanhSachYeuThich {
+  display: none;
+}
+
+.sanphamyeuthich .ĐanhSachYeuThich .ItemYeuThich {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 30px;
+  /* background-color: aqua; */
+}
+
+.sanphamyeuthich .ĐanhSachYeuThich .ItemYeuThich .anhItem {
+}
+
+.sanphamyeuthich .ĐanhSachYeuThich .ItemYeuThich .anhItem img {
+  width: 75px;
+  height: 120px;
+  border-radius: 10px;
+}
+.sanphamyeuthich .ĐanhSachYeuThich .thongtin-item .ten-san-pham {
+  /* background-color: #f0ae45; */
+  width: 260px;
+  flex-wrap: wrap;
+  font-size: 16px;
+  padding-right: 20px;
+}
+.sanphamyeuthich .ĐanhSachYeuThich .thongtin-item {
+  margin-left: 10px;
+}
+.sanphamyeuthich .ĐanhSachYeuThich .thongtin-item .gia-san-pham p {
+  font-weight: bold;
+  font-size: 17px;
+}
+.sanphamyeuthich .ĐanhSachYeuThich .thongtin-item .button-gio-hang p {
+  font-weight: bold;
+  background-color: #232222;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 140px;
+}
+
+.sanphamyeuthich .ĐanhSachYeuThich .button-xoa-item-sp_yeu_thich {
+  margin-top: -100px;
+}
+
+.sanphamyeuthich .ĐanhSachYeuThich .button-xoa-item-sp_yeu_thich i {
+  cursor: pointer;
+  /* margin-right: 20px; */
+}
+
+.sanphamyeuthich .canhbao {
+  padding: 7px;
+  color: #fff;
+  background-color: #f0ae45;
+  font-weight: 100;
+  font-size: 17px;
+
+  border-radius: 4px;
+  display: block;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+.sanphamyeuthich .canhbao i {
+  margin-left: 10px;
+}
+.sanphamyeuthich .canhbao div {
+  margin-left: 7px;
+}
+
+.DanhSachGioHang::-webkit-scrollbar {
+  width: 6px; /* Độ rộng của thanh trượt */
+  background-color: #ccc; /* Màu nền thanh trượt */
+}
+
+.DanhSachGioHang::-webkit-scrollbar-thumb {
+  background-color: #666; /* Màu của thanh trượt */
+  border-radius: 5px; /* Góc bo tròn cho thanh trượt */
+}
+
+.DanhSachGioHang {
+  font-size: 13px;
+
+  max-height: 900px;
+  overflow-y: auto;
+
+  padding-right: 100px;
+  overflow-y: hidden; /* Có thanh cuộn dọc */
+  overflow-x: hidden; /* Không có thanh cuộn ngang */
+}
+
+.DanhSachGioHang:hover {
+  overflow-y: scroll; /* Hiển thị thanh cuộn dọc khi người dùng hover vào */
+}
+.DanhSachGioHang .ItemGioHang .anhItem img {
+  width: 80px;
+  height: 118px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.DanhSachGioHang .ItemGioHang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 20px; */
+  font-weight: 100;
+  margin-bottom: 0px;
+  width: 260px;
+  padding-right: 20px;
+}
+
+.DanhSachGioHang .ItemGioHang .thongtin-item {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 17px;
+}
+.DanhSachGioHang .ItemGioHang .thongtin-item .mau-size {
+  display: flex;
+  justify-content: space-between;
+  color: #a7a6a6;
+  text-align: center;
+}
+
+.DanhSachGioHang .ItemGioHang .thongtin-item .ten-san-pham {
+  width: 250px;
+  margin-bottom: -10px;
+}
+
+.DanhSachGioHang .ItemGioHang .thongtin-item .ten-san-pham p {
+  flex-wrap: wrap;
+}
+
+.DanhSachGioHang .ItemGioHang .thongtin-item .mau-size {
+  margin-bottom: -10px;
+  display: flex;
+  width: 200px;
+  /* background-color: #696868; */
+  /* justify-content: space-around; */
+}
+
+.DanhSachGioHang .ItemGioHang .thongtin-item .mau-size .size {
+  /* margin-right: 110px; */
+  margin-left: 20px;
+}
+
+.DanhSachGioHang .ItemGioHang .thongtin-item .mau-size .mau {
+}
+
+.DanhSachGioHang .ItemGioHang .thongtin-item .soluong {
+  margin-bottom: -20px;
+}
+
+.DanhSachGioHang .ItemGioHang .thongtin-item .gia-san-pham {
+  margin-top: -14px;
+}
+
+.DanhSachGioHang .ItemGioHang .thongtin-item .gia-san-pham {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.DanhSachGioHang .ItemGioHang .button-xoa-item-gio_hang i {
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.GioHang .thanhtoan {
+  padding-top: 20px;
+  position: absolute;
+  bottom: 56px;
+  border-top: 1px solid #888;
+  background-color: #ffff;
+  /* padding-bottom: 50px; */
+  margin-bottom: -20px;
+  padding-right: 50px;
+}
+.GioHang .thanhtoan .tong_tien {
+  display: flex;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.GioHang .thanhtoan .tong_tien .ten {
+  margin-right: 160px;
+  color: #a7a6a6;
+  font-size: 17px;
+}
+
+.GioHang .thanhtoan .button_thanhtoan p {
+  color: #fff;
+  background-color: #232222;
+  font-size: 19px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  width: 197px;
+  cursor: pointer;
+}
+
+.GioHang .thanhtoan .button_thanhtoan {
+  margin-left: 140px;
+}
+
+.GioHang .thongbao_giohang {
+  font-size: 17px;
+  padding: 7px;
+  text-align: center;
+  background-color: #e39618;
+  color: #fff;
+  border-radius: 4px;
+}
+.header .logo img {
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  margin-top: 15px;
+
+  border: none;
+}

@@ -1,0 +1,173 @@
+/* public/login.css */
+
+.login-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.buttondangnhap {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 95%;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.register-link {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.facebook-button {
+  background-color: #1877f2;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.social-button {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.social-button i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.button-text {
+  flex-grow: 1; /* Kéo rộng văn bản để nó căn giữa */
+  text-align: center; /* Căn giữa văn bản theo chiều ngang */
+  font-size: 16px;
+}
+
+.facebook-button {
+  border-color: #1877f2;
+}
+
+.google-button {
+  border-color: #ea4335;
+}
+
+.facebook-button:hover {
+  background-color: #1877f2; /* Màu nền thay đổi */
+  color: #fff; /* Màu chữ thay đổi */
+}
+
+/* Khi người dùng di chuột qua nút đăng nhập bằng Google */
+.google-button:hover {
+  background-color: #ea4335; /* Màu nền thay đổi */
+  color: #fff; /* Màu chữ thay đổi */
+}
+
+.separator {
+  /* border-top: 1px solid #ccc; Đường kẻ ngang */
+  /* margin-top: 20px; Khoảng cách trên của đường kẻ ngang */
+  /* padding-top: 10px; Khoảng cách bên trên của đường kẻ ngang */
+  /* text-align: center;  */
+  /* font-size: 16px; */
+  margin-top: 35px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+
+.hidden-line {
+  color: #1e1c1c;
+  width: 40%;
+  border: solid 1px;
+}
+
+.login-container {
+  position: relative; /* Đặt vị trí tương đối cho login-container */
+}
+
+.close-button {
+  font-weight: bold;
+  position: absolute; /* Đặt vị trí tuyệt đối cho nút "X" */
+  top: 10px; /* Khoảng cách từ phía trên */
+  right: 10px; /* Khoảng cách từ phía phải */
+  background-color: transparent; /* Nền trong suốt */
+  border: none; /* Không viền */
+  font-size: 20px; /* Kích thước chữ */
+  color: #333; /* Màu chữ */
+  cursor: pointer; /* Con trỏ chuột thành dạng tay khi di chuột qua nút */
+}
+
+.close-button:hover {
+  color: #f00; /* Màu chữ thay đổi khi di chuột qua */
+}
+
+.forgot-password-link {
+  color: #007bff; /* Màu văn bản */
+  text-decoration: none; /* Loại bỏ gạch chân dưới */
+  display: block; /* Hiển thị thành phần như một khối */
+  margin-top: 10px; /* Khoảng cách từ trên xuống */
+  margin-bottom: 10px;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline; /* Gạch chân dưới khi di chuột qua */
+}

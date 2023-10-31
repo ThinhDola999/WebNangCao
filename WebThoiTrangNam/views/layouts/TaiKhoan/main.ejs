@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="TaiKhoan/main.css">
+</head>
+
+<body>
+
+
+    <div class="main">
+
+
+        <h1 class="tai-khoan-cua-ban"> <i class="fas fa-user"></i>Tài khoản của bạn</h1>
+        <div class="flex-container">
+            <div class="left">
+                <div class="info">
+                    <div class="ten-tai-khoan">
+
+                        <p>
+                            <%= user.ten %>
+                                <%= user.ho %>
+                        </p>
+
+                        <P class="new">New</P>
+
+                    </div>
+
+                    <div class="danh-muc-khac">
+
+                        <p class="tk">Thông tin tài khoản</p>
+                        <p>Hạng hội viên</p>
+                        <p>Lịch sử mua hàng</p>
+                        <p>Địa chỉ giao hàng</p>
+                        <p>Danh sách cửa hàng</p>
+                        <p>Sản phẩm yêu thích</p>
+                        <p>Ưu đãi của bạn</p>
+
+
+                    </div>
+
+
+
+                    <div class="dangxuat">
+                        <p>Đăng xuất</p>
+                    </div>
+                </div>
+                <div class="xemnhieu">
+                    <p class="view">ĐƯỢC XEM NHIỀU NHẤT</p>
+                    <img src="quanboicam.jpg">
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="top-right">
+                    <h2>Thông tin tài khoản</h2>
+                    <p>Bạn có thể cập nhật thông tin của mình ở trang này</p>
+                </div>
+                <div class="mid-right">
+                    <div class="r-left">
+                        <h3>Thông tin đăng nhập</h3>
+                        <div class="email xx">
+                            <p>Email:</p>
+
+                            <p class="x">
+                                <%= user.email %>
+                            </p>
+                        </div>
+                        <div class="sodienthoai xx">
+                            <p>Số điện thoại:</p>
+
+                            <p class="x">
+                                <%= user.sdt %>
+                            </p>
+                        </div>
+
+                        <div> <input type="checkbox" name="" id="thayDoiMatKhau">Thay đổi mật khẩu</div>
+
+                        <div class="matkhau" id="matKhauContainer">
+
+                            <P class="error"></P>
+                            <div class="matkhaumoi">
+                                <p class="xxx">Mật khẩu mới</p>
+                                <input type="password" name="MKM" id="MKM">
+                            </div>
+
+                            <div class="nhaplaimatkhaumoi">
+                                <p class="xxx">Nhập lại mật khẩu mới</p>
+                                <input type="password" name="NLMKM" id="NLMKM">
+                            </div>
+
+                            <button class="button capnhatmatkhau">Cập nhật</button>
+                        </div>
+
+
+                    </div>
+                    <div class="r-right">
+                        <h3>Thông tin cá nhân</h3>
+
+                        <div class="hoten">
+                            <div class="ho">
+                                <p class="xxx">Họ </p>
+                                <input type="text" name="" id="" value=" <%= user.ho %>">
+                            </div>
+                            <div class="ten">
+                                <p class="xxx">Tên</p>
+                                <input type="text" name="" id="" value=" <%= user.ten %>">
+                            </div>
+
+                        </div>
+                        <div class="thong-tin-khac">
+
+                            <div class="email">
+                                <p class="xxx">Email</p>
+                                <input type="text" name="" id="" value=" <%= user.email %>">
+                            </div>
+
+
+                            <div class="sdt">
+                                <p class="xxx">Số điện thoại</p>
+                                <!-- <input type="text" name="" id="" value=" <%= user.sdt %>"> -->
+                                <p class="so">
+                                    <%= user.sdt %>
+                                </p>
+                            </div>
+
+
+                            <div class="gioitinh">
+                                <p>Giới tính</p>
+                                <input checked="checked" name="gioitinh" type="radio" value="Nam" />Nam
+                                <input checked="checked" name="gioitinh" type="radio" value="Nu" />Nữ
+                            </div>
+
+                            <div class="sinhnhat">
+                                <p>Sinh Nhật</p>
+                                <p>Thông tin ngày sinh sẽ không thay đổi được sau khi nhập. Vui lòng nhập
+                                    đúng thông tin
+                                </p>
+
+                                <div class="dob-select">
+                                    <select name="day" id="day">
+                                        <option value="">Ngày</option>
+                                        <!-- Bạn có thể thêm các tùy chọn ngày tương ứng -->
+                                    </select>
+                                    <select name="month" id="month">
+                                        <option value="">Tháng</option>
+                                        <!-- Bạn có thể thêm các tùy chọn tháng tương ứng -->
+                                    </select>
+                                    <select name="year" id="year">
+                                        <option value="">Năm</option>
+                                        <!-- Bạn có thể thêm các tùy chọn năm tương ứng -->
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button class="button">Cập nhật thông tin</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="TaiKhoan/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="huongdanchonsize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="huong-dan-chon-size">
+        <div class="flex-container">
+            <div class="close-button-chonsize"><i class="fas fa-times"></i></div>
+            <h3>Chọn size</h3>
+            <div class="size">
+                <button class="chonS active">Hướng dẫn chọn size</button>
+                <button class="bangsize">Bảng size</button>
+            </div>
+            <span style="padding-top: 30px;">Thông số của bạn</span>
+            <span class="ten-range" style="margin-right: 280px;">Chiều cao</span>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="200" value="0" class="slider" id="myRange">
+
+                <p class="hienso">
+                    <h7 class="demo"></h7> cm
+                </p>
+            </div>
+            <span class="ten-range" style="margin-right: 280px;">Cân nặng</span>
+            <div class="slidecontainer2">
+                <input type="range" min="0" max="150" value="0" class="slider2" id="myRange2">
+
+                <p class="hienso">
+                    <h7 class="demo2"></h7> kg
+                </p>
+            </div>
+            <span class="tieude-dang">Dáng người của bạn</span>
+            <div class="body">
+                <div><img class="anhbody" src="anh/slim.png" alt=""></div>
+                <div><img class="anhbody" src="anh/binhthuong.png" alt=""></div>
+                <div><img class="anhbody" src="anh/fat.png" alt=""></div>
+            </div>
+            <form class="radio">
+                <div><input type="radio" name="body" id="gay" value="Gầy">
+                    <label for="gay">Gầy</label>
+                </div>
+                <div><input type="radio" name="body" id="binhthuong" value="Bình Thường">
+                    <label for="binhthuong">Bình Thường</label>
+                </div>
+                <div><input type="radio" name="body" id="beo" value="Béo">
+                    <label for="map">Mập</label>
+                </div>
+            </form>
+            <span style="padding-bottom: 20px;">Bạn muốn mặc như thế nào</span>
+            <form class="radio">
+                <div><input type="radio" name="clothingStyle" id="macOm" value="Mặc Ôm">
+                    <label for="gay">Mặc Ôm</label>
+                </div>
+                <div><input type="radio" name="clothingStyle" id="macVua" value="Mặc Vừa">
+                    <label for="binhthuong">Mặc Vừa</label>
+                </div>
+                <div><input type="radio" name="clothingStyle" id="macRong" value="Mặc Rộng">
+                    <label for="map">Mặc Rộng</label>
+                </div>
+            </form>
+            <div class="boxtimsize"><button class="timsize">TÌM SIZE</button></div>
+        </div>
+        <div class="divbangsize">
+            <table id="boxbangsize">
+                <tr style="background-color: black; color: white;">
+                    <th>SIZE</th>
+                    <th>CHIỀU CAO(CM)</th>
+                    <th>CÂN NẶNG(KG)</th>
+                    <th>VÒNG EO</th>
+                    <th>VÒNG MÔNG</th>
+                    <th>VÒNG ĐÙI</th>
+                    <th>DÀI QUẦN</th>
+                </tr>
+                <tr>
+                    <td>XS/28</td>
+                    <td>Dưới 161</td>
+                    <td>Dưới 55</td>
+                    <td>72</td>
+                    <td>101</td>
+                    <td>70</td>
+                    <td>99</td>
+                </tr>
+                <tr>
+                    <td>S/29</td>
+                    <td>161 - 165</td>
+                    <td>55 - 59</td>
+                    <td>76</td>
+                    <td>105</td>
+                    <td>72</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>M/30</td>
+                    <td>166 - 170</td>
+                    <td>60 - 64</td>
+                    <td>80</td>
+                    <td>109</td>
+                    <td>74</td>
+                    <td>102</td>
+                </tr>
+                <tr>
+                    <td>L/31</td>
+                    <td>171 - 175</td>
+                    <td>65 - 69</td>
+                    <td>84</td>
+                    <td>113</td>
+                    <td>76</td>
+                    <td>103</td>
+                </tr>
+                <tr>
+                    <td>XL/32</td>
+                    <td>176 - 180</td>
+                    <td>70 - 74</td>
+                    <td>88</td>
+                    <td>117</td>
+                    <td>78</td>
+                    <td>105</td>
+                </tr>
+                <tr>
+                    <td>XXL/34</td>
+                    <td>181 - 185</td>
+                    <td>75 - 80</td>
+                    <td>92</td>
+                    <td>121</td>
+                    <td>80</td>
+                    <td>106</td>
+                </tr>
+                <tr>
+                    <td>XXL/36</td>
+                    <td>>185</td>
+                    <td>>80</td>
+                    <td>96</td>
+                    <td>125</td>
+                    <td>82</td>
+                    <td>106</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="thongbao_chonsizephuhop">
+            <div class="cac_button">
+                <div class="quay_lai"><i class="fas fa-arrow-left"></i></div>
+                <div class="tieude_thongbaosize">Size phù hợp với bạn</div>
+                <div class="thoat"><i class="fas fa-times"></i></div>
+            </div>
+
+            <div class="ket_qua_chon_loc">
+                <p>XXL</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+
+        const params = new URLSearchParams(window.location.search);
+        // const productId = params.get('sanpham');
+        const loai = params.get('loai');
+        $('.huong-dan-chon-size .bangsize').click(function () {
+
+            var bangsize = $('.huong-dan-chon-size #boxbangsize');
+            if (bangsize.is(":visible")) {
+                $('.huong-dan-chon-size #boxbangsize').hide();
+                $(this).removeClass('active');
+                $('.huong-dan-chon-size .chonS').addClass('active')
+            } else {
+                $('.huong-dan-chon-size #boxbangsize').show();
+                $(this).addClass('active');
+                $('.huong-dan-chon-size .chonS').removeClass('active')
+
+            }
+
+
+        });
+
+        $('.close-button-chonsize').click(function () {
+            $('.phan-huong-dan-chon-size-cho-khach').hide();
+        });
+
+
+        $(document).ready(function () {
+            // Theo dõi sự kiện thay đổi cho thanh trượt đầu tiên
+            $(".slider").on("input", function () {
+                var value = $(this).val();
+                $(".demo").text(value);
+            });
+
+            // Theo dõi sự kiện thay đổi cho thanh trượt thứ hai
+            $(".slider2").on("input", function () {
+                var value = $(this).val();
+                $(".demo2").text(value);
+            });
+        });
+
+        function updateSize() {
+            // Lấy giá trị của chiều cao, cân nặng, dáng người và sở thích mặc
+            const height = parseInt($("#myRange").val());
+            const weight = parseInt($("#myRange2").val());
+            const bodyType = $("input[name='body']:checked").val();
+            const clothingStyle = $("input[name='clothingStyle']:checked").val();
+
+            // alert(height);
+            // alert(weight);
+            // alert(bodyType);
+            // alert(clothingStyle);
+            // // Thực hiện tính toán kích thước dựa trên thông tin thu thập
+
+            // Cập nhật kết quả vào một phần tử HTML phù hợp
+            if (loai === "loại áo") {
+                const sizeResult = calculateSizeAo(height, weight, bodyType, clothingStyle);
+                $(".thongbao_chonsizephuhop .ket_qua_chon_loc").text(sizeResult);
+            } else if (loai === "loại quần") {
+                const sizeResult = calculateSizeQuan(height, weight, bodyType, clothingStyle);
+                $(".thongbao_chonsizephuhop .ket_qua_chon_loc").text(sizeResult);
+            }
+
+
+        }
+
+        function calculateSizeAo(height, weight, bodyType, clothingStyle) {
+            const thresholdXS = 18.5;
+            const thresholdS = 20;
+            const thresholdM = 22.5;
+            const thresholdL = 25;
+            const thresholdXL = 27.5;
+            const thresholdXXL = 30;
+            const thresholdXXXL = 35;
+
+            var size = "Không rõ";
+            const bmi = weight / ((height / 100) ** 2);
+
+            if (bmi < thresholdXS) {
+                if (bodyType === "Gầy") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "XS";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "S";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XL";
+                    }
+                } else if (bodyType === "Bình Thường") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "XS";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "S";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "M";
+                    }
+                } else if (bodyType === "Béo") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "XS";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "M";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "L";
+                    }
+                }
+            } else if (bmi < thresholdS) {
+                if (bodyType === "Gầy") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "XS";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "S";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XL";
+                    }
+                } else if (bodyType === "Bình Thường") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "XS";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "S";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "M";
+                    }
+                } else if (bodyType === "Béo") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "XS";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "M";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "L";
+                    }
+                }
+            } else if (bmi < thresholdM) {
+                if (bodyType === "Gầy") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "M";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "L";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XXL";
+                    }
+                } else if (bodyType === "Bình Thường") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "L";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "XL";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XXL";
+                    }
+                } else if (bodyType === "Béo") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "XL";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "XXL";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XXXL";
+                    }
+                }
+            } else if (bmi < thresholdL) {
+                if (bodyType === "Gầy") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "S";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "M";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "L";
+                    }
+                } else if (bodyType === "Bình Thường") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "M";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "L";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XL";
+                    }
+                } else if (bodyType === "Béo") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "L";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "XL";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XXL";
+                    }
+                }
+            } else if (bmi < thresholdXL) {
+                if (bodyType === "Gầy") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "M";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "L";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XL";
+                    }
+                } else if (bodyType === "Bình Thường") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "L";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "XL";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XXL";
+                    }
+                } else if (bodyType === "Béo") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "XL";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "XXL";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XXXL";
+                    }
+                }
+            } else {
+                if (bodyType === "Gầy") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "L";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "XL";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XXL";
+                    }
+                } else if (bodyType === "Bình Thường") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "XL";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "XXL";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XXL";
+                    }
+                } else if (bodyType === "Béo") {
+                    if (clothingStyle === "Mặc Ôm") {
+                        size = "XXL";
+                    } else if (clothingStyle === "Mặc Vừa") {
+                        size = "XXL";
+                    } else if (clothingStyle === "Mặc Rộng") {
+                        size = "XXL";
+                    }
+                }
+            }
+            return size;
+        }
+
+        function calculateSizeQuan(height, weight, bodyType, clothingStyle) {
+            // Các ngưỡng BMI tùy chỉnh
+            const thresholds = {
+                XS: 18.5,
+                S: 20,
+                M: 22.5,
+                L: 25,
+                XL: 27.5,
+                XXL: 30,
+                XXXL: 35
+            };
+
+            // Kích cỡ mặc định
+            let size = "Không rõ";
+            const bmi = weight / ((height / 100) ** 2);
+
+            // Tính toán kích cỡ
+            for (const key in thresholds) {
+                if (bmi < thresholds[key]) {
+                    // Xác định kích cỡ dựa trên ngưỡng BMI
+                    if (bodyType === "Gầy") {
+                        if (clothingStyle === "Mặc Ôm") {
+                            size = key;
+                        } else if (clothingStyle === "Mặc Vừa") {
+                            size = key;
+                        } else {
+                            // Đối với kích cỡ quần, bạn có thể thay đổi size dưới dạng số tương ứng
+                            if (key === "XS") size = 29;
+                            else if (key === "S") size = 30;
+                            else if (key === "M") size = 31;
+                            else size = 32;
+                        }
+                    } else if (bodyType === "Bình Thường") {
+                        if (clothingStyle === "Mặc Ôm") {
+                            size = key;
+                        } else if (clothingStyle === "Mặc Vừa") {
+                            size = key;
+                        } else {
+                            if (key === "XS") size = 30;
+                            else if (key === "S") size = 31;
+                            else if (key === "M") size = 32;
+                            else size = 33;
+                        }
+                    } else if (bodyType === "Béo") {
+                        if (clothingStyle === "Mặc Ôm") {
+                            size = key;
+                        } else if (clothingStyle === "Mặc Vừa") {
+                            size = key;
+                        } else {
+                            if (key === "XS") size = 32;
+                            else if (key === "S") size = 33;
+                            else if (key === "M") size = 34;
+                            else size = 35;
+                        }
+                    }
+                    break; // Khi đã tìm ra kích cỡ thích hợp, thoát vòng lặp
+                }
+            }
+
+            return size;
+        }
+
+
+        $('.thongbao_chonsizephuhop').hide();
+        $('.boxtimsize .timsize').click(function () {
+            updateSize();
+            $('.thongbao_chonsizephuhop').show();
+            $('.huong-dan-chon-size .flex-container').hide();
+        });
+
+        $('.thongbao_chonsizephuhop .cac_button .thoat').click(function () {
+            $('.thongbao_chonsizephuhop').hide();
+            $('.phan-huong-dan-chon-size-cho-khach').hide();
+        });
+
+        $('.thongbao_chonsizephuhop .cac_button .quay_lai').click(function () {
+            $('.thongbao_chonsizephuhop').hide();
+            $('.huong-dan-chon-size .flex-container').show();
+        });
+
+
+
+    </script>
+</body>
+
+</html>

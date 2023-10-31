@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="TimKiem/main.css">
+</head>
+
+<body>
+
+
+    <p class="ten-trang">Trang chủ/Tìm Kiếm</p>
+    <div class="TimKiem_main">
+
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="Search..." value="<%= searchText %>">
+
+
+    </div>
+    <div class="main">
+
+        <div class="BoLoc">
+
+            <p class="iconBoLoc">Bộ Lọc<i class="fas fa-filter"></i></p>
+
+            <div class="DanhSachLuaChon">
+
+                <!-- <div class="button">
+                    <p>Áo Nam</p>
+                    <i class="fas fa-times"></i>
+                </div> -->
+
+            </div>
+
+
+
+            <div class="Nhom MucLuc">
+                <div class="TieuDe">
+                    <h4>Nhóm</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <div class="MenuItem">
+                    <div class="Item">
+                        <input type="checkbox"></input>
+                        <p>Thời Trang Nam</p>
+                    </div>
+
+                    <div class="Item">
+                        <input type="checkbox"></input>
+                        <p>Phụ Kiện</p>
+                    </div>
+
+                    <div class="Item">
+                        <input type="checkbox"></input>
+                        <p>Ưu Đãi</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="MauSac MucLuc">
+                <div class="TieuDe">
+                    <h4>Màu Sắc</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <div class="MenuItem">
+                    <div class="Item">
+                        <input type="checkbox"></input>
+                        <p>Áo Nam</p>
+                    </div>
+
+                    <div class="Item">
+                        <input type="checkbox"></input>
+                        <p>Quần Nam</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="Size MucLuc">
+                <div class="TieuDe">
+                    <h4>Size</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <div class="MenuItem">
+
+                    <div class="ItemSize">
+                        <p>S</p>
+                        <p>M</p>
+                        <p>xxl</p>
+                        <p>S</p>
+                        <p>M</p>
+                        <p>xxl</p>
+
+                        <p>S</p>
+                        <p>M</p>
+                        <p>xxl</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="DanhSachSanPham">
+
+            <div class="top-danhSachSanPham">
+                <p class="soLuongSanPham">
+                    sản phẩm</p>
+
+                <div class="SapXep">
+                    <label class="sorter-label" for="sorter">Sắp xếp</label>
+                    <select id="sorter" class="sorter-options">
+                        <option value="position" selected="selected">
+                            Mặc định </option>
+                        <option value="price_asc">
+                            Giá tăng dần </option>
+                        <option value="price_desc">
+                            Giá giảm dần </option>
+                    </select>
+
+                </div>
+            </div>
+
+            <p class="thongBao"></p>
+
+            <div class="AoQuan">
+                <!-- KHONG TIM THAY KET QUA PHU HOP -->
+
+                <div class="ItemAoQuan">
+                    <img src="">
+                    <div class="contentItem">
+                        <p class="tenSanPham">tenSanPham</p>
+                        <i></i>
+                    </div>
+
+                    <p class="gia">540.000</p>
+                    <div class="MauSac">
+
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="PhanTrang">
+
+                <button class="previous"><i class="fas fa-chevron-left"></i></button>
+                <a class="trang">1</a>
+                <a class="trang">2</a>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="TimKiem/main.js"></script>
+</body>
+
+</html>

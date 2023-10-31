@@ -1,0 +1,248 @@
+.main {
+  /* font-family: Arial, Helvetica, sans-serif !important; */
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tai-khoan-cua-ban {
+  font-size: 25px;
+  top: 20px;
+  margin-left: 259px;
+}
+
+.tai-khoan-cua-ban i {
+  margin-right: 8px;
+}
+.main .flex-container {
+  display: flex;
+  justify-content: center;
+}
+.main .flex-container .right.mid-right {
+  display: flex;
+}
+.main .flex-container .left .info {
+  border: 1px solid rgb(139, 139, 139);
+  width: 300px;
+  padding: 10px;
+}
+
+.main .flex-container .left .info .ten-tai-khoan {
+  border-bottom: 1px solid rgb(134, 134, 134);
+  display: flex;
+  padding: 15px;
+  /* text-align: center; */
+  align-items: center;
+}
+
+.main .flex-container .left .info .ten-tai-khoan p {
+  /* padding: 15px; */
+  font-weight: bolder;
+}
+
+.main .flex-container .left .info .ten-tai-khoan .new {
+  color: #ffffff;
+
+  background-color: rgb(186, 213, 35);
+  margin-left: 30px;
+  padding: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 10px;
+}
+.main .xemnhieu .view {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(228, 228, 228);
+  padding: 30px 0px 30px 0px;
+  font-weight: bold;
+  margin-top: 0px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.main .main .flex-container h2 {
+  border-bottom: 1px solid rgb(134, 134, 134);
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.main .flex-container .right {
+  margin-left: 50px;
+}
+
+.main .right .top-right h2 {
+  font-size: 20px;
+}
+
+.main ul {
+  list-style: none;
+  padding: 0px;
+}
+.main li {
+  padding-bottom: 20px;
+}
+.main ul li a {
+  text-decoration: none;
+  color: black;
+}
+.main .dangxuat a {
+  text-decoration: none;
+  color: black;
+}
+.main .dangxuat {
+  border-top: 1px solid rgb(136, 136, 136);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.main .info {
+  padding-bottom: 1px solid rgb(131, 131, 131);
+}
+.main .mid-right {
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+}
+.main .r-left h3 {
+  padding-bottom: 10px;
+}
+
+.main .r-left .x {
+  font-weight: bold;
+  margin-left: 5px;
+}
+.main .r-left .xx {
+  display: flex;
+}
+
+.main .r-left div {
+  padding-bottom: 20px;
+}
+
+.main .r-right .hoten input {
+  font-weight: bold;
+}
+
+.main .r-right .thong-tin-khac .email input {
+  font-weight: bold;
+}
+.main .top-right {
+  border-bottom: 1px solid rgb(129, 129, 129);
+}
+.main .hoten {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .hoten input {
+  margin-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid rgb(129, 129, 129);
+}
+.main .email input {
+  width: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid rgb(129, 129, 129);
+}
+.main .sdt .so {
+  width: 160px;
+  padding: 10px;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid rgb(129, 129, 129);
+}
+.main .hovaten {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .r-right {
+  display: block;
+}
+.main .sdt {
+  padding-bottom: 20px;
+}
+.main .nhapgioitinh {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.main .button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.right .mid-right .r-right .thong-tin-khac .gioitinh {
+  margin-bottom: 20px;
+}
+
+.right .mid-right .r-right .thong-tin-khac .gioitinh .dob-select {
+  display: flex;
+  gap: 15px;
+}
+
+.dob-select select {
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(243, 243, 243);
+  margin-right: 10px;
+}
+.left .info .danh-muc-khac p {
+  padding: 6px;
+}
+
+.left .info .dangxuat p {
+  padding: 6px;
+}
+
+.left .xemnhieu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+.left .xemnhieu img {
+  width: 200px;
+  height: 300px;
+}
+.left .info .danh-muc-khac .tk {
+  border-left: 3px solid rgb(9, 9, 9);
+  font-weight: bold;
+}
+.left .info .dangxuat p:hover {
+  text-decoration: underline;
+}
+.left .info .dangxuat {
+  cursor: pointer;
+}
+.r-right .xxx::after {
+  content: " *"; /* Hiển thị ký tự " * " bằng cách sử dụng pseudo-element ::after */
+  color: red; /* Màu của ký tự " * " */
+}
+.right .mid-right .r-left .matkhau {
+  display: none;
+}
+.right .mid-right .r-left .matkhau .xxx::after {
+  content: " *"; /* Hiển thị ký tự " * " bằng cách sử dụng pseudo-element ::after */
+  color: red; /* Màu của ký tự " * " */
+}
+
+.right .mid-right .r-left .matkhau input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid rgb(129, 129, 129);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/DangNhap_DangKy/login.css">
+</head>
+
+<body>
+    <!-- tep file login.ejs -->
+    <div class="login-container">
+        <button id="closeButton" class="close-button">X</button>
+        <h2>Đăng nhập</h2>
+
+        <p class="error"></p>
+
+        <div class="form">
+            <input type="text" id="user" name="user" placeholder="Email hoặc Số điện thoại" required value="">
+
+
+            <input type="password" id="matkhau" name="matkhau" placeholder="Mật khẩu" required value="">
+
+            <a href="/forgot-password" class="forgot-password-link">Quên mật khẩu?</a>
+
+            <button class="buttondangnhap">Đăng nhập</button>
+        </div>
+        <div class="separator">
+            <hr class="hidden-line"> <!-- Đường kẻ ngang ẩn -->
+            <div class="centered-text">
+                Hoặc
+            </div>
+            <hr class="hidden-line">
+        </div>
+        <a href="/auth/facebook" class="social-button facebook-button">
+            <span class="button-text"> <i class="fab fa-facebook-f"></i>Đăng nhập bằng Facebook</span>
+        </a>
+
+        <a href="/auth/google" class="social-button google-button">
+            <span class="button-text"><i class="fab fa-google"></i>Đăng nhập bằng Google</span>
+        </a>
+
+
+
+        <p class="register-link">Chưa có tài khoản?
+            <a class="dangkyngay">Đăng ký ngay</a>
+        </p>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="/DangNhap/login.js"></script>
+
+</html>

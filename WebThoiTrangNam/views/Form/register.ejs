@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/DangNhap_DangKy/register.css">
+</head>
+
+<body>
+    <!-- Trong tệp register.ejs -->
+    <div class="register-container">
+        <button id="closeButton" class="close-button">X</button>
+        <h2>Đăng ký</h2>
+
+        <p class="error"></p>
+
+        <div class="form" id="registration-form">
+            <div class="form-group ho-ten">
+                <div class="form-group-HT">
+                    <label for="ho" class="required-label">Họ</label>
+                    <input type="text" class="ho" id="ho" name="ho">
+                </div>
+
+                <div class="form-group-HT">
+                    <label for="ten" class="required-label">Tên</label>
+                    <input type="text" class="ten" id="ten" name="ten">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email" class="required-label">Email:</label>
+                <input type="text" class="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="sdt" class="required-label">Số điện thoại:</label>
+                <input type="text" class="sdt" id="sdt" name="sdt">
+            </div>
+
+            <div class="form-group">
+                <label for="matkhau" class="required-label">Mật khẩu:</label>
+                <input type="password" class="matkhau" id="matkhau" name="matkhau">
+            </div>
+
+            <div class="form-group">
+                <label for="nhaplaimatkhau" class="required-label">Nhập lại mật khẩu:</label>
+                <input type="password" class="nhaplaimatkhau" id="nhaplaimatkhau" name="nhaplaimatkhau">
+            </div>
+
+
+
+            <button class="buttondangky">Đăng ký</button>
+        </div>
+
+
+        <p class="login">
+            <a class="dangnhapngay">
+                <i class="fas fa-arrow-left"></i>
+                Đăng Nhập
+            </a>
+        </p>
+
+    </div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/DangNhap/register.js"></script>
+
+</html>
